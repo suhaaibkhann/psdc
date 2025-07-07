@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #003366;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #003366;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  color: #003366;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.profile-card p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.courses ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin: 10px auto;
+  display: inline-block;
+  color: #333;
+}
+
+.courses li {
+  margin-bottom: 5px;
+}
+
+.edit-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #e65c00;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+canvas {
+  position: fixed;
+  background: #111;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.main-nav {
+  background-color: #002244;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-nav li {
+  margin: 0 15px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: #004080;
+}
